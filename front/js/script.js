@@ -26,7 +26,7 @@ function appendElementsToArticle(article, image, h3, p) {
 
 function makeAnchor(id) {
     const anchor = document.createElement("a")
-    anchor.href = "./product.html?id=" + id
+    anchor.href = `./product.html?id=${id}`
     return anchor
 }
 
@@ -53,8 +53,8 @@ function makeH3(name) {
 }
 
 function makeParagraph(description){
- const p = document.createElement("p")
- p.textContent = description
- p.classList.add("productDescription")
- return p
+    const p = document.createElement("p")
+    p.textContent = description
+    p.classList.add("productDescription")
+    return p
 }
